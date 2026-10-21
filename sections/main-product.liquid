@@ -499,6 +499,7 @@
                     section_id: section.id,
                     show_pickup_availability: true
                   -%}
+                  {%- render 'mobile-product-experience', product: product, section_id: section.id -%}
                 {%- when 'rating' -%}
                   {%- if product.metafields.reviews.rating.value != blank -%}
                     <div class="rating-wrapper">

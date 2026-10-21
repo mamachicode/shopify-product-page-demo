@@ -1,0 +1,14 @@
+{{ 'mobile-product-experience.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'mobile-product-experience.js' | asset_url }}" defer="defer"></script>
+
+<div class="product-delivery-note">
+  <strong>Delivery information</strong>
+  <p>Review available delivery options and estimated dates at checkout.</p>
+</div>
+
+<div class="mobile-product-bar" data-mobile-product-bar data-section-id="{{ section_id }}">
+  <span class="mobile-product-bar__title">{{ product.title | escape }}</span>
+  <button type="button" class="button button--primary" data-mobile-cart-button>
+    {{ 'products.product.add_to_cart' | t }}
+  </button>
+</div>
